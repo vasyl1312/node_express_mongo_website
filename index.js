@@ -16,12 +16,12 @@ app.set('views', 'views');
 
 async function start() {
     try {
-        await mongoose.connect('', {
-            useNewUrlParser: true,
-            useFindAndModify: false
+        await mongoose.connect('mongodb+srv://vasyl:Vasyl2002@cluster0.z1btx.mongodb.net/todos', {
+            // useNewUrlParser: true,
+            // useFindAndModify: false
         })
         app.listen(PORT, () => {
-            console.log('Server has benn started...')
+            console.log('Server has been started...')
         });
     } catch (err) {
         console.log(err);
