@@ -18,7 +18,7 @@ app.use(todoRoutes);
 
 async function start() {
     try {
-        await mongoose.connect('mongodb+srv://vasyl:Vasyl2002@cluster0.z1btx.mongodb.net/todos', {
+        await mongoose.connect('mongodb+srv://vasyl:Vasyl2002@cluster0.u5brf.mongodb.net/todos', {
             // useNewUrlParser: true,
             // useFindAndModify: false
         })
@@ -31,4 +31,3 @@ async function start() {
 }
 
 start();
-//19-55
